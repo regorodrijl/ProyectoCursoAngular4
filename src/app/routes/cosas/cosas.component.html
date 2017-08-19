@@ -1,0 +1,8 @@
+<router-outlet></router-outlet>
+<b>Busqueda binding Two-Way binding COSAS:</b><br>
+<nav>
+    <a routerLink="/cosas/nuevo">   ->Formulario</a>
+</nav>
+Si buscas algo, en la consola aparecerá!
+<cosas-lista [(busqueda)]="busqueda.value" (callback)="funcionCallback()"></cosas-lista>
+
